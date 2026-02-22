@@ -21,7 +21,7 @@ import org.jbox2d.common.Vec2;
             platform1.setPosition(new Vec2(-8f, -5.5f));
 
             // Student
-            Shape studentShape = new BoxShape(2f, 3f);
+            Shape studentShape = new BoxShape(1f, 2f);
             student = new DynamicBody(this, studentShape);
             student.setPosition(new Vec2(7f, -9f));
             student.addImage(new BodyImage("data/student.png", 4f));
