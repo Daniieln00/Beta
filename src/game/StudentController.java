@@ -10,7 +10,7 @@ public class StudentController extends KeyAdapter {
 
     private final DynamicBody student;
 
-    // Ajustes (puedes afinarlos luego)
+    // se puede hacer mas fluido
     private static final float WALK_SPEED = 6.0f;
     private static final float JUMP_SPEED = 12.0f;
 
@@ -39,7 +39,7 @@ public class StudentController extends KeyAdapter {
         if (code == KeyEvent.VK_A || code == KeyEvent.VK_LEFT ||
                 code == KeyEvent.VK_D || code == KeyEvent.VK_RIGHT) {
 
-            // parar movimiento horizontal al soltar
+            // parar movimiento horizontal al soltar()
             student.setLinearVelocity(new Vec2(0, student.getLinearVelocity().y));
         }
     }
